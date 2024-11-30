@@ -1,6 +1,9 @@
 const catalyst = require("zcatalyst-sdk-node");
 const query = require("../SQL/userQuery");
 const bcrypt = require("bcrypt");
+const jwt= require("jsonwebtoken");
+require("dotenv").config();
+const JWT_SECRET =  process.env.JWT_SECRET;
 
 exports.testConnection = async (req, res) => {
   try {
@@ -15,9 +18,7 @@ exports.login = async (req, res) => {
     const catalystApp = catalyst.initialize(req, { scope: "admin" });
     console.log("formData", formData);
     const useremail = `SELECT * FROM users WHERE email = '${formData.email}'`;
-
     const user = await catalystApp.zcql().executeZCQLQuery(useremail);
-    console.log("user==>", user);
     if (!user.length > 0) {
       return res
         .status(401)
@@ -25,17 +26,16 @@ exports.login = async (req, res) => {
     }
     const usserPass = user[0]?.users?.password;
     const comparePassword = await bcrypt.compare(formData.password, usserPass);
-    console.log("comparePassword", comparePassword);
     if (!comparePassword) {
       return res.status(401).json({
         success: false,
         message: "Invalid Credentials Please check you email and password",
       });
     }
-
+    const token = await jwt.sign({id: user.ROWID}, JWT_SECRET);
     res
       .status(200)
-      .json({ success: true, message: "user successfully login", user });
+      .json({ success: true, message: "user successfully login",token, user });
   } catch (error) {
     res.status(409).json({ success: false, message: "Something went wrong" });
   }
