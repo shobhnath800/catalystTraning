@@ -1,0 +1,302 @@
+[debug] [2024-12-06T16:15:21.452Z] : 
+[debug] [2024-12-06T16:15:21.455Z] : ----------------------------------------------------------------------
+[debug] [2024-12-06T16:15:21.455Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-06T16:15:21.456Z] : CLI Version:  1.18.0-beta.5
+[debug] [2024-12-06T16:15:21.456Z] : Platform:     win32
+[debug] [2024-12-06T16:15:21.457Z] : Node Version: v22.3.0
+[debug] [2024-12-06T16:15:21.457Z] : Time:         Fri Dec 06 2024 21:45:21 GMT+0530 (India Standard Time)
+[debug] [2024-12-06T16:15:21.457Z] : ----------------------------------------------------------------------
+[debug] [2024-12-06T16:15:21.457Z] : 
+[debug] [2024-12-06T16:15:22.398Z] : > authorizing via signed-in user option
+[debug] [2024-12-06T16:15:22.399Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2024-12-06T16:15:22.441Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/11771000000414004 
+
+[debug] [2024-12-06T16:15:23.550Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 06 Dec 2024 16:15:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-06T16:15:23.564Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/11771000000414004/environment 
+
+[debug] [2024-12-06T16:15:23.899Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 06 Dec 2024 16:15:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-06T16:15:24.391Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/11771000000414004/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2024-12-06T16:15:24.733Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 06 Dec 2024 16:15:24 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-06T16:15:24.739Z] : unknown eol undefined hence skipping check
+[info] [2024-12-06T16:15:31.379Z] : 
+[info] [2024-12-06T16:15:31.379Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-06T16:15:31.381Z] : i nodejstest_function: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:15:31.399Z] : 
+[info] [2024-12-06T16:16:29.066Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:16:35.792Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:16:35.793Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:20:46.562Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:20:54.834Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:20:54.835Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:21:14.705Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:21:21.874Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:21:21.876Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:22:17.987Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:22:23.998Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:22:24.000Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:22:59.204Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:23:06.974Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:23:06.975Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:23:07.978Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:23:15.418Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:23:15.420Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:25:18.295Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:25:24.900Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:25:24.901Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:26:17.206Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:26:23.526Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:26:23.527Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:26:28.862Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:26:35.073Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:26:35.074Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:26:36.090Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:26:42.527Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:26:42.532Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:28:09.025Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[debug] [2024-12-06T16:28:09.041Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:4000',
+  port: '4000',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:4000/'
+}
+[debug] [2024-12-06T16:28:09.046Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:4000',
+  port: '4000',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:4000/'
+}
+[info] [2024-12-06T16:28:14.638Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:28:14.639Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:30:18.675Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:30:26.836Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:30:26.837Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:32:20.865Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:32:28.133Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:32:28.138Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:32:29.150Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:32:37.006Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:32:37.007Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:32:56.024Z] : 
+change of Router\userRouter.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:33:01.885Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:33:01.886Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:33:58.438Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:34:05.291Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:34:05.292Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:34:06.306Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:34:14.070Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:34:14.072Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:34:23.983Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:34:30.371Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:34:30.373Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:34:50.643Z] : 
+change of Router\userRouter.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:34:56.714Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:34:56.716Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:35:25.224Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:35:31.921Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:35:31.922Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:35:51.118Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:35:56.725Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:35:56.727Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:40:12.766Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:40:18.990Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:40:18.992Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:40:20.008Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:40:26.650Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:40:26.652Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:40:35.323Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:40:41.402Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:40:41.407Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:40:45.412Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:40:51.528Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:40:51.530Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:40:52.539Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:41:00.743Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:41:00.744Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[info] [2024-12-06T16:44:48.295Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:44:53.760Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:44:53.761Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
+[debug] [2024-12-06T16:45:00.538Z] : > refreshing access token <
+[debug] [2024-12-06T16:45:00.546Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[warn] [2024-12-06T16:45:11.632Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-12-06T16:45:11.633Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.com
+
+[debug] [2024-12-06T16:45:11.633Z] : >>>> RETRYING
+
+[warn] [2024-12-06T16:45:11.638Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-12-06T16:45:11.638Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.com
+
+[debug] [2024-12-06T16:45:11.638Z] : >>>> RETRYING
+
+[warn] [2024-12-06T16:45:11.643Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-12-06T16:45:11.643Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.com
+
+[debug] [2024-12-06T16:45:11.644Z] : >>>> RETRYING
+
+[warn] [2024-12-06T16:45:11.651Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[error] [2024-12-06T16:45:11.659Z] : × API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.com
+[debug] [2024-12-06T16:45:11.659Z] : Error Stack: CatalystError: API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.com
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:176:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at API._retry (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:174:16)
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:220:56)
+    at Generator.next (<anonymous>)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-12-06T16:45:11.659Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+[debug] [2024-12-06T16:45:11.659Z] : Error Status: 500
+[info] [2024-12-06T16:45:11.660Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-12-06T16:45:11.661Z] : × API Error: getaddrinfo ENOTFOUND accounts.zoho.com
+[debug] [2024-12-06T16:45:11.661Z] : Error Stack: CatalystError: API Error: getaddrinfo ENOTFOUND accounts.zoho.com
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:229:32)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-12-06T16:45:11.661Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+[debug] [2024-12-06T16:45:11.661Z] : Error Status: 500
+[info] [2024-12-06T16:45:11.662Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-12-06T16:45:11.664Z] : × API Error: getaddrinfo ENOTFOUND accounts.zoho.com
+[debug] [2024-12-06T16:45:11.664Z] : Error Stack: CatalystError: API Error: getaddrinfo ENOTFOUND accounts.zoho.com
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:229:32)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-12-06T16:45:11.664Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+[debug] [2024-12-06T16:45:11.665Z] : Error Status: 500
+[info] [2024-12-06T16:45:11.665Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-12-06T16:45:11.673Z] : × Error when refreshing the access token
+[debug] [2024-12-06T16:45:11.673Z] : Error Stack: CatalystError: Error when refreshing the access token
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\credential.js:139:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-12-06T16:45:11.673Z] : Original Error: CatalystError: API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.com
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:176:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at API._retry (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:174:16)
+    at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:220:56)
+    at Generator.next (<anonymous>)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-12-06T16:45:11.673Z] : Error Status: 500
+[info] [2024-12-06T16:45:11.674Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-12-06T16:45:11.675Z] : × An unexpected error has occurred.
+[debug] [2024-12-06T16:45:11.675Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:12:17)
+    at process.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:520:28)
+    at process.processEmit [as emit] (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-12-06T16:45:11.676Z] : Original Error: Error: CatalystError: Error when refreshing the access token
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\credential.js:139:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  status: 500,
+  exit: 2,
+  original: CatalystError: API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.com
+      at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:176:23)
+      at Generator.next (<anonymous>)
+      at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+      at new Promise (<anonymous>)
+      at __awaiter (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+      at API._retry (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:174:16)
+      at API.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:220:56)
+      at Generator.next (<anonymous>)
+      at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+      at new Promise (<anonymous>) {
+    status: 500,
+    exit: 2,
+    original: Error: getaddrinfo ENOTFOUND accounts.zoho.com
+        at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'accounts.zoho.com'
+    },
+    context: undefined,
+    errorId: undefined,
+    arg: undefined,
+    skipHelp: false,
+    fileName: 'C:\\Users\\LENOVO\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\internal\\api'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: false,
+  fileName: 'C:\\Users\\LENOVO\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\internal\\credential'
+}
+    at exports.default (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:14:23)
+    at process.<anonymous> (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:520:28)
+    at process.processEmit [as emit] (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-12-06T16:45:11.676Z] : Error Status: 500
+[info] [2024-12-06T16:45:11.676Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[info] [2024-12-06T16:45:17.003Z] : 
+change of Controller\userController.js in nodejstest_function detected. Preparing your function, please wait...
+[info] [2024-12-06T16:45:23.812Z] : i AdvancedIO[nodejstest_function]: ready!
+[info] [2024-12-06T16:45:23.815Z] : i AdvancedIO[nodejstest_function]: http://localhost:3000/server/nodejstest_function/
