@@ -1,0 +1,23 @@
+
+User Table
+
+
+ROWID          Name        email               phone                 password
+
+1               node js     node@gail.com     1234567890            xxxxxxxxxfdsdfd d
+
+2              catalyst     catalyst@gmail.co  123456789            xxxxxxxxxfdsdfd
+
+
+
+
+Address 
+
+ROWID       userId (Forgin Key of User Table)         HouseNo        street                 landmark                 pincode           city            state          country
+
+1           2                                         45         old rohatak road       solution library        131402                  kkd              HR             IN 
+
+2           1                                         3000          kanpur              axis bank                  3000222             kanpur           UP             IN 
+
+
+

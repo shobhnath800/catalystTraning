@@ -6,7 +6,13 @@ const fs = require("fs");
 const os =  require("os");
 require("dotenv").config();
 const JWT_SECRET = process.env.JWT_SECRET;
+const redis = require("redis"); // Assuming Redis for caching
 
+const cacheClient = redis.createClient({
+  host: "localhost", // Your Redis server details
+  port: 3000,
+  // Add authentication if needed
+});
 exports.testConnection = async (req, res) => {
   try {
     res.status(200).json({ success: true, message: "I am live!" });
@@ -57,20 +63,16 @@ exports.creteUser = async (req, res) => {
     };
     const useremail = `SELECT * FROM users WHERE email = '${userData.email}'`;
     const checkUser = await catalystApp.zcql().executeZCQLQuery(useremail);
-    if (checkUser.length > 0) {
-      res
-        .status(203)
-        .json({ success: true, message: "email id is already exists" });
-    }
-    const userResult = await catalystApp
-      .datastore()
-      .table("users")
-      .insertRow(userData);
+    if (!checkUser || checkUser.length === 0) {
+      const userResult = await catalystApp.datastore().table("users").insertRow(userData);
     res.status(200).json({
       success: true,
       message: "user successfully created",
       data: userResult,
     });
+    }else{      
+      res.status(203).json({ success: true, message: "email id is already exists" });
+    }  
   } catch (error) {
     res.status(409).json({
       success: false,
